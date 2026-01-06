@@ -1,0 +1,18 @@
+#User & Group Permission Management
+
+This project demonstrates hands-on experience with Linux user and group management, directory permissions, umask configuration, SGID, and sticky bit behavior. The tasks were completed in a CCIA environment and reflect practical system administration. 
+
+
+Task A: Account and Group Setup
+
+Step 1: Create Groups
+Three groups were created:
+
+employee
+
+payroll
+
+admin
+
+<img width="826" height="447" alt="Image" src="https://github.com/user-attachments/assets/a489aa70-9b4f-4d1c-8535-64f00cc120f1" />
+
