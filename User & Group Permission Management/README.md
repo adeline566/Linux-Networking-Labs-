@@ -98,40 +98,71 @@ Exited Emma’s and Sophia’s accounts.
 
 
 
-## Task B: SGID Permission Configuration
+# Task B: SGID Permission Configuration
 
-Step 1: Set SGID on Shared Directory
+# Step 1: Set SGID on Shared Directory
 The SGID permission was set on /home/cyse_project to ensure that files created within the directory inherit the group ownership.
 
-Step 2: Copy File with SGID Enabled
+
+<img width="1042" height="588" alt="image" src="https://github.com/user-attachments/assets/f92952c3-c445-4b7e-aed1-edf7ae04010c" />
+
+
+# Step 2: Copy File with SGID Enabled
 Under Sophia’s account, Sophia_homework was copied to the shared directory as Sophia_homework2.
 
-Step 3: Access Test (Emma)
+<img width="1042" height="588" alt="image" src="https://github.com/user-attachments/assets/a743276d-c56b-4de0-96ac-c6d83b6c82ad" />
+
+# Step 3: Access Test (Emma)
 Emma’s account was used to test read access to Sophia_homework2, confirming correct SGID behavior.
 
-Task C: Remove SGID Permissions
 
-Step 1: Unset SGID and Restrict Group Access
+<img width="1042" height="588" alt="image" src="https://github.com/user-attachments/assets/91cda201-9737-45e5-ad32-515d87e583f0" />
+
+
+# Task C: Remove SGID Permissions
+
+# Step 1: Unset SGID and Restrict Group Access
 SGID permissions were removed from /home/cyse_project, and group read access was restricted.
 
-Step 2: Copy File After SGID Removal
+<img width="1042" height="588" alt="image" src="https://github.com/user-attachments/assets/024ed471-b340-47dd-8708-3e6d29cc2f8c" />
+
+
+# Step 2: Copy File After SGID Removal
 Sophia copied Sophia_homework to the shared directory as Sophia_homework3.
 
-Step 3: Access Test (Olivia)
+
+<img width="1042" height="588" alt="image" src="https://github.com/user-attachments/assets/cb54b368-1200-4b6f-8d33-4d6e68a4b466" />
+
+
+# Step 3: Access Test (Olivia)
 Olivia attempted to read Sophia_homework3 and access was denied, confirming correct permission enforcement.
 
-Extra Credit: Sticky Bit Configuration
+<img width="1042" height="588" alt="image" src="https://github.com/user-attachments/assets/33924c4b-0f8d-4749-ba9a-38dda5ef0430" />
 
-Step 1: File Deletion Attempt (Olivia)
+# Extra Credit: Sticky Bit Configuration
+
+# Step 1: File Deletion Attempt (Olivia)
 Olivia attempted to delete Sophia_homework from /home/cyse_project.
 
-Step 2: Set Sticky Bit
+<img width="1042" height="588" alt="image" src="https://github.com/user-attachments/assets/755b2bd9-2c90-4cc0-8f75-66ce76589166" />
+
+<img width="1042" height="588" alt="image" src="https://github.com/user-attachments/assets/66cf971e-4b1f-494e-8166-f17075d5b02d" />
+
+
+
+# Step 2: Set Sticky Bit
 The sticky bit permission was enabled on /home/cyse_project to restrict file deletion to file owners or the root user.
 
-Step 3: Deletion Test with Sticky Bit
+
+<img width="1042" height="588" alt="image" src="https://github.com/user-attachments/assets/58738768-ba00-4a5e-9807-80728a691661" />
+
+
+
+# Step 3: Deletion Test with Sticky Bit
 Olivia attempted to delete Sophia_homework3 but was unsuccessful.
 
-Explanation:
 The sticky bit (t) ensures that only the file owner or root user can delete or rename files within a directory. Since Sophia_homework and Sophia_homework3 are owned by Sophia, Olivia was unable to delete them despite having write permissions on the directory.
 
+
+<img width="1042" height="588" alt="image" src="https://github.com/user-attachments/assets/17093c11-a422-4a16-a8e8-6a2ed7b201d5" />
 
