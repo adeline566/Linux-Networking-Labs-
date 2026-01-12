@@ -1,6 +1,6 @@
 #User & Group Permission Management LAB
 
-This project demonstrates hands-on experience with Linux user and group management, directory permissions, umask configuration, SGID, and sticky bit behavior. The tasks were completed in a CCIA environment and reflect practical system administration. 
+This lab demonstrates hands-on experience with Linux user and group management, directory permissions, umask configuration, SGID, and sticky bit behavior. The tasks were completed in a CCIA environment and reflect practical system administration. 
 
 
 Task A: Account and Group Setup
@@ -13,7 +13,6 @@ employee
 payroll
 
 admin
-
 
 
 
